@@ -13,13 +13,13 @@ async def make_request(row):
                 "cpfcnpj": row[1].lower().strip(),
                 "nome": row[2].lower().strip(),
                 "telefone": 'Arquivo B3',
-                "arquivo": f'Comprovante IRRF 202201-202212 {row[1].lower().strip()}.pdf' if len(
-                    row[1].lower().strip()) > 11 else f'Comprovante IRRF 2022 {row[1].lower().strip()}.pdf'
+                "arquivo": f'Comprovante IRRF 202201-202212 {row[1].lower().strip()}.pdf' if len(row[1].lower().strip()) > 11 else f'Comprovante IRRF 2022 {row[1].lower().strip()}.pdf'
             },
             verify=False
         )
-        print(f'Nome :{row[2].lower().strip()} CPF : {row[1].lower().strip()}')
+        """ print(f'Nome :{row[2].lower().strip()} CPF : {row[1].lower().strip()}') """
         print(response.status_code)
+        """ print(f'Comprovante IRRF 202201-202212 {row[1].lower().strip()}.pdf') if len(row[1].lower().strip()) > 11 else print(f'Comprovante IRRF 2022 {row[1].lower().strip()}.pdf') """
     except:
         pass
 
