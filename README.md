@@ -11,3 +11,13 @@ Pacotes
  pip3 install requests
  
  pip3 install aysncio
+ 
+ Instruções 
+ --------
+ 
+ Passar o nome do txt, indentificar as linhas e 'play'
+ 
+ 
+ A melhorar
+ -----------
+ Identificar os campos(cabeçalhos) automaticamente 
