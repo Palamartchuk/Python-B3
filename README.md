@@ -2,7 +2,7 @@
 
 Feito inserir dados no banco via python script.
 
-Alterar URL e 'obj' para desejável
+Alterar URL e 'obj' para os desejáveis 
 
 
 Pacotes
