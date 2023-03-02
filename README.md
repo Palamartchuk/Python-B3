@@ -10,7 +10,7 @@ Pacotes
 
  pip3 install requests
  
- pip3 install aysncio
+ pip3 install asyncio
  
  Instruções 
  --------
