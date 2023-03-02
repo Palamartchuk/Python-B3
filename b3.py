@@ -3,7 +3,7 @@ import requests
 from requests.models import Response
 with open('newb3.txt') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
-    """ next(csv_reader) """
+    next(csv_reader)
     line_count = 0
     teste = 0;
     for row in csv_reader:
@@ -21,12 +21,7 @@ with open('newb3.txt') as csv_file:
                 )
                 print(f'Nome :{row[2].lower().strip()} CPF : {row[1].lower().strip()}')
                 print(response.status_code)
-                """ if(len(row[1].lower().strip()) > 11):
-                  print(f'{row[1].lower().strip()} cnpj')
-                  teste += 1; """
             except:
                 pass
             line_count += 1
-   
-
     print('fim')
